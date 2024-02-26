@@ -1,0 +1,20 @@
+@startuml Diagrama.plantuml
+Instrumento <|-- Saxofon
+Instrumento <|-- Guitarra
+Instrumento <|-- Tiple
+Musico *-- Instrumento
+Banda *-- Musico
+
+Instrumento : afinar()
+Instrumento : tocar()
+Musico : Instrumento
+Musico : afinar_Instrumento
+Musico : tocar_Instrumento
+Banda  : Musico
+Banda  : afinar()
+Banda  : tocar()
+Banda  : armar_Banda()
+
+@enduml
+//composicion de clases 
+
